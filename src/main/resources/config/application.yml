@@ -1,0 +1,42 @@
+app:
+ config:
+
+# 記入行の左にある空白は増減不可のため
+# 記入様式の文字の開始位置に合わせる
+
+  activeDirectorysPath: 
+# ADのIPとポート番号を記入
+# 記入様式
+#  192.168.XXX.XXX:389
+
+   192.168.129.3:389
+
+   
+  domainName: 
+# ドメイン名を記入
+# 記入様式
+#  XXX.local
+
+   iacsol.local
+
+
+  attributeNameList:
+# ADから取得する属性を記入
+# 記入様式のようにハイフンを2行並べ、2行目に属性名を記入
+# 1行目2行目ともに、ハイフンの右には半角の空白を1文字入れる。
+# 記入様式
+#  - 
+#   - DisplayName
+#  - 
+#   - Department
+#  - 
+#   - Mail
+#  - 
+#   - DistinguishedName
+#   - OU 【属性に下位属性がある場合のみ、次の行に並べて記載】
+
+   - 
+    - DisplayName
+   - 
+    - DistinguishedName
+    - OU
