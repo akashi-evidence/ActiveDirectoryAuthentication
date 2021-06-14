@@ -29,6 +29,7 @@ public class AuthController {
 
 	@PostMapping
 	public List<List<String>> getUserData(
+			// 受け取り側から送信されたデータの取得
 			@RequestParam("samAccountName") String samAccountName,
 			@RequestParam("password") String password) {
 		List<List<String>> userData = authService.getUserData(samAccountName, password);
